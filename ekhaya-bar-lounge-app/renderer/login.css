@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+  }
+
+  .card {
+    width: 1220px;
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    border-radius: 20px;
+    overflow: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: auto;
+  }
+
+  .column {
+    flex: 1;
+    height: 100%;
+  }
+
+  .left-column {
+    background-color: #ededed;
+    position: relative;
+  }
+  
+  .left-column h1 {
+    font-size: 32px;
+    font-weight: normal;
+    margin-left: 54px;
+    margin-top: 54px;
+  }
+  
+  .left-column img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    height: auto;
+  }
+  
+  .right-column {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .right-column h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #303030;
+    margin-top: 4px;
+  }
+  
+  .login-form {
+    width: 80%;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .login-form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+  }
+  
+  .login-form input,
+  .login-form button {
+    width: 100%; /* Match button and input widths */
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box; /* Includes padding in width calculation */
+  }
+  
+  .login-form input {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .login-form input:focus {
+    border-bottom: 2px solid orangered;
+  }
+  
+  .login-form input::placeholder {
+    color: #aaa;
+    font-style: normal;
+  }
+  
+  .login-form button {
+    padding: 24px;
+    background-color: #222222;
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 32px;
+  }
+  
+  .login-form button:hover {
+   opacity: 0.9;
+  }
+  
